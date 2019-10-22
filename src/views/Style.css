@@ -1,0 +1,201 @@
+.overflow-container {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+.schedule-calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.body-webpage {
+  height: 100vh;
+}
+.overflow-container-schedule {
+  overflow: auto !important;
+  width: 100%;
+  height: 100%;
+}
+.navigation-color {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  background-color: pink;
+  border-width: thin !important;
+}
+.admin-background {
+  background-image: none !important;
+  /* background-color: white; */
+}
+.nav-font {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  color: white;
+}
+.text-style {
+  color: white;
+}
+.thickness-border {
+  border-width: medium !important;
+  background-color: lightseagreen !important;
+  font-family: "Lucida Console", monospace;
+}
+.border-color {
+  border-color: black !important;
+  border-width: thick !important;
+}
+h1,
+p,
+h5 {
+  font-family: "Poppins", sans-serif;
+}
+.calendar-cell {
+  border-width: thin !important;
+  background-color: white !important;
+  font-family: "Lucida Console", monospace;
+  text-align: center;
+}
+.calendar-day {
+  border-width: medium !important;
+}
+.calendar-cell-empty {
+  border-width: medium !important;
+  background-color: lightgrey !important;
+  font-family: "Lucida Console", monospace;
+  text-align: center;
+}
+.schedule-empty {
+  background: salmon;
+  font-family: "Lucida Console", monospace;
+  text-align: center;
+  cursor: pointer;
+}
+.schedule-cell {
+  background: lightgreen;
+  font-family: "Lucida Console", monospace;
+  text-align: center;
+  cursor: pointer;
+}
+.right-button:after {
+  font-size: 150%;
+  content: " \02C3";
+}
+.left-button:after {
+  font-size: 150%;
+  content: " \02C2";
+}
+.schedule-empty:active {
+  background: rgb(250, 250, 3);
+}
+.schedule-cell:active {
+  background: rgb(250, 250, 3);
+}
+.butn {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  text-decoration: none;
+}
+.butn:focus {
+  outline: none;
+}
+.calendar-number {
+  top: 0px;
+  left: -10px;
+  position: absolute;
+}
+.calendar-button {
+  top: -45px;
+  right: -47px;
+  position: relative;
+}
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  -webkit-transition: opacity 800ms linear;
+  -o-transition: opacity 800ms linear;
+  transition: opacity 800ms linear;
+}
+@media only screen and (max-width: 600px) {
+  .container-width {
+    width: 90%;
+  }
+  .right-button:after {
+    font-size: 15px !important;
+  }
+  .left-button:after {
+    font-size: 15px !important;
+  }
+  .booking-padding {
+    padding: 0;
+  }
+  .modal-width {
+    width: 50%;
+  }
+  .style-spacing {
+    margin-top: 5%;
+  }
+  .responsive-border {
+    border-width: 0px !important;
+  }
+  .calendar-width {
+    width: 100%;
+  }
+  .calendar-font {
+    font-size: 20px !important;
+  }
+  .calendar-month {
+    margin-top: 5%;
+  }
+  .calendar-year {
+    margin-top: 15%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .container-width {
+    width: 80%;
+  }
+  .booking-padding {
+    padding: 2%;
+  }
+  .responsive-border {
+    border-width: 0px !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .responsive-border {
+    border-width: 2px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container-width {
+    width: 80%;
+  }
+  .booking-padding {
+    padding: 2%;
+  }
+  .responsive-border {
+    border-width: 2px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container-width {
+    width: 50%;
+  }
+  .booking-padding {
+    padding: 2%;
+  }
+  .responsive-border {
+    border-width: 2px !important;
+  }
+}
